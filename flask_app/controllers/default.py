@@ -1,5 +1,6 @@
 from flask_app import app
+from flask import render_template
 
 @app.route('/')
 def main():
-    return "<p>Server is running.</p>"
+    return render_template("index.html")

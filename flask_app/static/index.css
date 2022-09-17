@@ -1,0 +1,32 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #313131;
+}
+
+main {
+    height: 100vh;
+    min-height: 100%;
+}
+
+main, .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#keyButton {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    color: #CA3E47;
+    background-color: transparent;
+    border: none;
+    caret-color: transparent;
+}
+
+#keyButton:focus  {
+    border: none;
+    outline: none;
+}
