@@ -1,6 +1,9 @@
+const inputField = document.querySelector('#keyButton')
+
 function focusInput() {
-    const keyInput = document.querySelector('#keyButton').focus()
+    const keyInput = inputField.focus()
 }
-function keypress() {
-    console.log('key press')
-}
+
+window.addEventListener('keydown', function(e) {
+    inputField.value = e.key
+}, false)
