@@ -7,9 +7,10 @@ body {
 main {
     height: 100vh;
     min-height: 100%;
+    flex-direction: column;
 }
 
-main, .row {
+main, .row, .box p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,4 +32,15 @@ main, .row {
 #keyButton:focus  {
     border: none;
     outline: none;
+}
+
+.box {
+    background-color: #414141;
+    color: #CA3E47;
+    border-radius: 10px;
+}
+
+.box p {
+    flex-direction: column;
+    padding: 10px;
 }
