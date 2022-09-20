@@ -38,9 +38,13 @@ main, .row, .box p {
     background-color: #414141;
     color: #CA3E47;
     border-radius: 10px;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-left: 10px;
 }
 
 .box p {
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
+    margin: 0;
 }
