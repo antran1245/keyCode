@@ -3,6 +3,7 @@ const ascii = document.querySelector('#ascii')
 const codeField = document.querySelector('#code')
 const charField = document.querySelector('#keyCode')
 let shift = ""
+let hovering = true
 
 function focusInput() {
     const keyInput = inputField.focus()
@@ -48,3 +49,13 @@ window.addEventListener('keyup', (e) => {
         shift = ""
     }
 })
+
+function hoverBox(ele) {
+    let val = ele.children[0].children[0].innerText
+    $.post("http://localhost:5000/number", {
+        data: ''+val
+    },
+    function(data, status) {
+        console.log(data)
+    })
+}

@@ -47,4 +47,5 @@ main, .row, .box p {
     flex-direction: column;
     padding: 20px;
     margin: 0;
+    cursor: default;
 }

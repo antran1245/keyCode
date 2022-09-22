@@ -13,13 +13,13 @@
                 <input id="keyButton" placeholder="Press a key . . ." autofocus readonly/>
             </div>
             <div class="row">
-                <div class="box">
+                <div class="box" onmouseenter="hoverBox(this)">
                     <p>
                         Ascii
                         <span id="ascii">99</span>
                     </p>
                 </div>
-                <div class="box">
+                <div class="box" onmouseenter="hoverBox(this)">
                     <p>
                         Key Code
                         <span id="keyCode">99</span>
@@ -33,6 +33,7 @@
                 </div>
             </div>
         </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript" src="{{url_for('static', filename='index.js')}}"></script>
     </body>
 </html>
