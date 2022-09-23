@@ -13,23 +13,28 @@
                 <input id="keyButton" placeholder="Press a key . . ." autofocus readonly/>
             </div>
             <div class="row">
-                <div class="box" onmouseenter="hoverBox(this)">
+                <div class="box" onmouseenter="hoverBox(this)" onmouseleave="hoverOff()">
                     <p>
                         Ascii
-                        <span id="ascii">99</span>
+                        <span id="ascii">?</span>
                     </p>
                 </div>
-                <div class="box" onmouseenter="hoverBox(this)">
+                <div class="box" onmouseenter="hoverBox(this)" onmouseleave="hoverOff()">
                     <p>
                         Key Code
-                        <span id="keyCode">99</span>
+                        <span id="keyCode">?</span>
                     </p>
                 </div>
                 <div class="box">
                     <p>
                         Code
-                        <span id="code">99</span>
+                        <span id="code">?</span>
                     </p>
+                </div>
+            </div>
+            <div id="number" class="row">
+                <div class="box">
+                    <p>hi</p>
                 </div>
             </div>
         </main>
